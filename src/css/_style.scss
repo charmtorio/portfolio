@@ -1,0 +1,71 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 800;
+}
+
+a.btn,
+button.btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+}
+
+.home {
+    .left-col {
+        position: absolute;
+        left: 0%;
+        background-image: url('../assets/images/manila.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+
+        .image-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0%;
+            background-color: rgba(0, 0, 0, 0.50);
+            z-index: 2;
+
+            .avatar-image {
+                img {
+                    width: 150px;
+                    border-radius: 50%;
+                    border: 5px solid $white;
+                }
+                .divider {
+                    font-size: 40px;
+                    font-weight: 800;
+                    line-height: 0.5;
+                }
+            }
+        }
+
+        h1 {            
+            .typed-cursor {
+                font-weight: 100;
+            }
+        }
+
+        .more-info {
+            a {
+                margin: 0 30px 0 15px;
+            }
+        }
+    }
+
+    .right-col {
+        position: absolute;
+        left: 50%;
+    }
+}
