@@ -1,8 +1,13 @@
 // Colors
 $white: #ffffff;
-// $pink: #e64980;
-$pink: #f76262;
+$black: #000;
+$red-orange: #f76262;
+$muted: #6c757d;
+$gray: #ecf0f1;
 
 $theme-colors: (
-    "pink": $pink
+    "primary": $red-orange,
+    "secondary": $gray,
+    "muted": $muted,
+    "black": $black,
 );

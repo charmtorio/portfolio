@@ -1,10 +1,27 @@
-body {
+h1, h2, h3, a {
     font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     font-size: 62px;
     font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p { 
+    font-size: 15px;
+    font-weight: 400;
 }
 
 a.btn,
@@ -20,52 +37,299 @@ button.btn {
 }
 
 .home {
-    .left-col {
-        position: absolute;
-        left: 0%;
-        background-image: url('../assets/images/manila.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
+    overflow: hidden;
 
-        .image-overlay {
+    .left-col {
             position: absolute;
+            left: 0;
+            background-image: url('../assets/images/manila.jpg');
+            background-position: center;
+            background-size: cover;
             height: 100%;
             width: 100%;
-            left: 0%;
-            background-color: rgba(0, 0, 0, 0.50);
-            z-index: 2;
+            transition: transform 0.6s;
 
-            .avatar-image {
-                img {
-                    width: 150px;
-                    border-radius: 50%;
-                    border: 5px solid $white;
+            .image-overlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0%;
+                background-color: rgba(0, 0, 0, 0.50);
+                z-index: 2;
+
+                .avatar-image {
+                    img {
+                        width: 150px;
+                        border-radius: 50%;
+                        border: 5px solid $white;
+                    }
+                    .divider {
+                        font-size: 40px;
+                        font-weight: 800;
+                        line-height: 0.5;
+                    }
                 }
-                .divider {
-                    font-size: 40px;
-                    font-weight: 800;
-                    line-height: 0.5;
+            }
+
+            h1 {            
+                .typed-cursor {
+                    font-weight: 100;
                 }
             }
-        }
 
-        h1 {            
-            .typed-cursor {
-                font-weight: 100;
+            .more-info {
+                a {
+                    margin: 0 30px 0 15px;
+                }
+                a:hover:nth-child(1) {
+                    background-color: transparent;
+                    border-color: $white;
+                    color: $white;
+                }
+                a:hover:nth-child(2) {
+                    background-color: $red-orange;
+                    border-color: $red-orange;
+                    color: $white;
+                }
             }
-        }
-
-        .more-info {
-            a {
-                margin: 0 30px 0 15px;
-            }
-        }
     }
 
     .right-col {
         position: absolute;
+        height: 100%;
         left: 50%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        transition: all 0.6s;
+    }
+
+    .toggle-col {
+        position: absolute;
+        height: 100%;
+        left: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        transition: all 0.6s;
+    }
+}
+
+.home-lines {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+
+    &:after {
+        background: repeat center/11px url(../assets/images/dot.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .linesContent {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.6s;
+        background-color: #fff;
+
+        .home-line {
+            border-color: $red-orange;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            transition: all 0.6s;
+        }
+
+        .home-line:nth-child(1) {
+            right: 30px;
+            top: 30px;
+            border-right-width: 3px;
+            border-right-style: solid;
+            border-top-width: 3px;
+            border-top-style: solid;
+        }
+        .home-line:nth-child(2) {
+            bottom: 30px;
+            left: 30px;
+            border-left-width: 3px;
+            border-left-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+        }
+        .home-line:nth-child(3) {
+            left: 30px;
+            top: 30px;
+            border-left-width: 3px;
+            border-left-style: solid;
+            border-top-width: 3px;
+            border-top-style: solid;
+        }
+        .home-line:nth-child(4) {
+            right: 30px;
+            bottom: 30px;
+            border-right-width: 3px;
+            border-right-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;;
+        }
+    }
+}
+
+.intro-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.6s;
+    text-align: center;
+
+    .menu_list {
+        .home-item {
+            position: absolute;
+            bottom: -12%;
+            left: 48%;
+            
+            svg {
+                font-size: 32px;
+                color: black;
+                
+                &:hover {
+                    color: $red-orange;
+                }
+            }
+        }
+
+        span {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 1.9% 0;
+            transition: all 0.6s;
+        }
+        a {
+            display: inline-block;
+            position: relative;
+            font-weight: 900;
+            font-size: 4.8vw;
+            color: transparent;
+            -webkit-text-stroke: 2px #333;
+            transition: all 0.6s;
+        }
+        a:after {
+            transition: all 0.3s;
+        }
+        a:hover {
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
+
+.pages {
+    .p-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        .intro-content {
+            .menu_list {
+                a {
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+
+    .p-content {
+        .header-pink {
+            position: absolute;
+            color: red;
+            width: 50px;
+            border: 2px solid $red-orange;
+        }
+    }
+
+    &.about {
+        .profile-image {
+            padding: 12px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+            width: 100%;
+        }
+        .skills-languages {
+            .skills {
+                .skill {
+                    padding-top: 2px;
+                    padding-bottom: 14px;
+                    position: relative;
+                    line-height: 1;
+
+                    > span.percentage {
+                        float: right;
+                        font-size: 13px;
+                        color: #acacac;
+                        font-weight: 700;
+                        display: inline-block;
+                        margin-top: 1px;
+                    }
+
+                    .progress_bg {
+                        height: 4px;
+                        background-color: #ececec;
+                        margin-top: 7px;
+
+                        .progress_bar {
+                            height: 100%;
+                            background-color: $red-orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fun-facts {
+            h4 {
+                font-size: 28px;
+                font-weight: 800;
+            }
+            h5 {
+                font-size: 14px;
+            }
+            .ff-icon {
+                font-size: 43px;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.social-icons {
+    a {
+        color: $black;
+
+        &:hover {
+            color: $red-orange;
+        }
     }
 }
