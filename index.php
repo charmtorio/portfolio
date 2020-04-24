@@ -15,9 +15,6 @@
         <div class="col-12 col-lg-6 right-col">
             <?php include 'menu.php'; ?>
         </div>
-        <div class="col-12 toggle-col">
-            <?php include 'toggle-col.php'; ?>
-        </div>
     </div>
 
     <?php include 'footer-scripts.php'; ?>

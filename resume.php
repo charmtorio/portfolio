@@ -12,134 +12,140 @@
             <?php include 'menu.php'; ?>
     </div>
 
-    <div class="col-12 col-lg-9 ml-auto p-4 bg-light p-content">
-        <section class="resume pt-page" id="resume"><div class="scroll___content">
-            <div class="scroll__content">     
-                <div class="sec_title">
-                    <h2>My Resume</h2>
-                </div>        
-                <div class="sec__content">
-                    <div class="container">
-                                
+    <div class="col-12 col-lg-9 ml-auto p-4 bg-secondary p-content">
+        <div class="container">
+            <div class="bg-white py-4 px-5 p-card">
+                <div class="content-title">
+                    <h2 class="pt-2">My Resume</h2>
+                </div>
+                <div class="header-pink mt-1"></div>
+                <hr>
+
+                <div class="content-content">
+                    <div class="education-experience my-5">
                         <div class="row">
-
-                            <!--Education-->
-                            <div class="col-xs-12 col-sm-6">
-                                <h3 class="subtitle ">Education
-                                    <svg viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g class="Web">
-                                            <g class="Header">
-                                                <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </h3>
-                                <div class="resume">
-
+                            <div class="col-12 col-sm-6 education">
+                                <h3 class="py-3">Education</h3>
+                                <div class="c-resume">
                                     <div class="item">
                                         <div class="date">
-                                            <span>2011 - 2013</span>
+                                            <span>June 2008 - March 2012</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Educational Specialist</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>University of Santo Tomas</h4>
+                                            <u class="text-primary">Espana Blvd, Manila, 1008</u> <br>
+                                            <p class="text-muted">Bachelor of Science Major in Computer Science</p>
                                         </div>
                                     </div>
 
                                     <div class="item">
                                         <div class="date">
-                                            <span>2008 - 2010</span>
+                                            <span>June 1998 - March 2008</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Doctoral Degree</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="date">
-                                            <span>2005 - 2007</span>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Master Degree</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="date">
-                                            <span>2000 - 2004</span>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Bachelor Degree</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>St. Scholastica’s Academy Marikina</h4>
+                                            <u class="text-primary">29 West Drive East Dr, Marikina, 1810 Metro Manila</u>
                                         </div>
                                     </div>
 
                                 </div>
-                            </div>
-
-                            <!--Experience-->
-                            <div class="col-xs-12 col-sm-6 mob-margin-top-30">
-                                <h3 class="subtitle">Experience
-                                    <svg viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g class="Web">
-                                            <g class="Header">
-                                                <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </h3>
-                                <div class="resume">
-
+                            </div>  
+                            <div class="col-12 col-sm-6 experience">
+                                <h3 class="py-3">Experience</h3>
+                                <div class="c-resume">
                                     <div class="item">
                                         <div class="date">
-                                            <span>2016 - Present</span>
+                                            <span>April 2020 - Present</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Lead Web Developer</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>Application Support Analyst</h4>
+                                            <p class="text-muted">
+                                                <a href="https://www.newbook.cloud/"><u class="text-primary">EMAPTA Versatile Services (NewBook)</u></a> <br>
+                                                Reporting to the Research & Development Manager and under the guidance of the senior development team, this role is responsible for supporting the software development team and its objectives, providing internal user support and implementation of software development requirements.
+                                            </p>
                                         </div>
                                     </div>
 
                                     <div class="item">
                                         <div class="date">
-                                            <span>2012 - 2015</span>
+                                            <span>Nov 2017 - April 2020</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Senior Web Developer</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>Mid PHP Developer</h4>
+                                            <a href="https://www.tbstdigital.com.au/"><u class="text-primary">Techno Global Team (The Business Success Team)</u></a> <br>
+                                            <ul class="responsibilities">
+                                                <li>Provided technical assistance to Australian Team (TBST)</li>
+                                                <li>Built websites for our Australian clients from scratch using Laravel Framework or Wordpress</li>
+                                                <li>Provided support for enhancing and/or fixing client’s websites (Laravel and Wordpress websites)</li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <div class="item">
                                         <div class="date">
-                                            <span>2010 - 2011</span>
+                                            <span>Nov 2016 - Sep 2017</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Junior Web Developer</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>PHP Developer</h4>
+                                            <u class="text-primary">HKT Teleservices (Formerly PCCW Teleservices)</u> <br>
+                                            <ul class="responsibilities">
+                                                <li>Enhance and maintain PCCW Global Applications</li>
+                                                <li>Provided database scripts for PCCW Global Applications</li>
+                                                <li>Conducts application testing and evaluation</li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <div class="item">
                                         <div class="date">
-                                            <span>2008 - 2009</span>
+                                            <span>Mar 2016 - Sep 2016</span>
                                         </div>
                                         <div class="content">
-                                            <h4>Web Developer</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+                                            <h4>Software Engineer</h4>
+                                            <u class="text-primary">Incuventure Partners Corporation (Department of Budget & Management)</u> <br>
+                                            <ul class="responsibilities">
+                                                <li>Converted a PowerBuilder application to Java Web Based System using JAVA Framework Grail</li>
+                                                <li>Built ‘Electronic Government Manpower Information System’ and ‘Security Module’ websites to be used by the employees of DBM</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="date">
+                                            <span>Oct 2012 - Mar 2016</span>
+                                        </div>
+                                        <div class="content">
+                                            <h4>Technical Consultant</h4>
+                                            <u class="text-primary">SOFGEN Holdings Ltd.</u> <br>
+                                            <ul class="responsibilities">
+                                                <li>Built Translation Tool website for creating SOFGEN’s product for the clients and developers of Avaloq</li>
+                                                <li>Developed coded test case using the in-house product Automation tool of SOFGEN</li>
+                                                <li>Provides client test cases for Functional System Testing and UAT</li>
+                                                <li>Create client advised test cases, order validation and fix errors</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="date">
+                                            <span>Nov 21 2011 - Feb 23 2012</span>
+                                        </div>
+                                        <div class="content">
+                                            <h4>Intern</h4>
+                                            <u class="text-primary">IBM Solutions Delivery</u> <br>
+                                            <ul class="responsibilities">
+                                                <li>Assistant of the Project Manager of all the projects in IBM Solutions Delivery</li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                 </div>
-                            </div>
-                        </div><!--.row-->
-
-                    </div><!--.container-->
-                </div><!--.sec__content-->
-            </div><!--.scroll__content-->
-        </div></section>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <?php include 'footer-scripts.php'; ?>
